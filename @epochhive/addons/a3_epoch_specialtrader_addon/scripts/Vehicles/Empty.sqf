@@ -1,15 +1,22 @@
-diag_log format['***[TRADE] 1 IS READY***'];
+/*
+	File: 		trade_addon empty.sqf
+	Author: 	GBR Suppe
+	Version: 	0.2.0
+	Edit: 		IF YOU EDIT SOMETHING YOUR NAME HERE
+*/
+	
+diag_log format['***[TRADE] EMPTY IS READY***'];
 
 if(isServer) then {
-	"eins" addPublicVariableEventHandler {_this select 1 call Spawn_1};
+	"acht" addPublicVariableEventHandler {_this select 1 call Spawn_8};
 
-	Spawn_1 = {	
+	Spawn_8 = {	
 
 		private["_spawnPos","_spawnDir","_veh"];
 
 		_spawnPos = _this select 1;
 		_spawnDir = _this select 2;
-		_veh = createVehicle["I_MRAP_03_F", _spawnPos, [], 0, "NO_COLLIDE"];
+		_veh = createVehicle["GNT_C185", _spawnPos, [], 0, "NO_COLLIDE"];
 		_veh allowDamage false;
 		_veh setPos _spawnPos;
 		_veh setDir _spawnDir;
@@ -19,10 +26,5 @@ if(isServer) then {
 		_veh setVelocity [0,0,.1];
 		_veh allowDamage true;
 		
-		clearItemCargoGlobal _veh;
-		clearWeaponCargoGlobal _veh;
-		clearMagazineCargoGlobal _veh;
-		clearBackPackCargoGlobal _veh;
-
 	};
 };

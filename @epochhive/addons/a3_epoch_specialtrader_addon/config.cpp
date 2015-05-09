@@ -1,5 +1,5 @@
 class CfgPatches {
-	class trade_addon {
+	class a3_epoch_specialtrader {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -7,9 +7,9 @@ class CfgPatches {
 	};
 };
 class CfgFunctions {
-	class trade {
+	class specialtrader {
 		class main {
-			file = "\x\addons\trade_addon\init";
+			file = "\x\addons\a3_epoch_specialtrader\init";
 			class init {
 				postInit = 1;
 			};

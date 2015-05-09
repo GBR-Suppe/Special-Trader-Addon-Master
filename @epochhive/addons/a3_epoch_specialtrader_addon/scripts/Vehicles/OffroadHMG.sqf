@@ -1,12 +1,22 @@
-diag_log format['***[TRADE] 3 IS READY***'];
+/*
+	File: 		OffroadHMG.sqf
+	Author: 	GBR Suppe
+	Version: 	0.2.0
+	Edit: 		IF YOU EDIT SOMETHING YOUR NAME HERE
+*/
+
+diag_log format['***[TRADE] OffroadHMG IS READY***'];
 
 if(isServer) then {
+
+
+
 	"drei" addPublicVariableEventHandler {_this select 1 call Spawn_3};
 
 	Spawn_3 = {	
 
 		private["_spawnPos","_spawnDir","_veh"];
-
+		
 		_spawnPos = _this select 1;
 		_spawnDir = _this select 2;
 		_veh = createVehicle["B_G_Offroad_01_armed_EPOCH", _spawnPos, [], 0, "NO_COLLIDE"];
