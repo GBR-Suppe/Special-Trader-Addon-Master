@@ -1,1 +1,1 @@
-x\addons\a3_epoch_specialtrader
+x\addons\a3_epoch_specialtrader_addon
