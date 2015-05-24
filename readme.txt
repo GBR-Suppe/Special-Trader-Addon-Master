@@ -1,5 +1,10 @@
 
 
+Newest Version: https://github.com/GBR-Suppe/a3_epoch_HSBlackmarket
+
+
+
+
 Special Trader Addon, by GBR Suppe.
 
 It is a simple and good way to paste vehicles which are actually op...
